@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Clicker</title>
+</head>
+<style>
+    body{color: greenyellow; background-color: black; font-family: 'Courier New', Courier, monospace; text-align: center;}
+    .p2{font-size:48px;}
+    .spacing{line-height: 0.1;}
+    .button {
+    background-color: gray; 
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    cursor:pointer;
+    }
+    .button:hover {
+    background-color: rgb(88, 88, 88);
+    color: rgb(201, 201, 201);
+    }
+    .cButton{font-size: 24px;}
+    .button:active{color: yellowgreen;}
+</style>
+
+<body>
+    <div class="spacing">
+    <p class="p2" id="c">$0</p>
+    <p id="_ps">per second: $0</p>
+    </div>
+
+    <br>
+
+    <button class="button cButton" onclick="add()">Hack</button>
+    <h1></h1>
+    <h> Upgrades</h>
+    <button class="button" onclick="upgradeClick()" id="upgrade">Upgrade Hack(1): $10</button>
+    <h1></h1>
+    <h>Devices</h>
+    <button class="button" onclick="openPort()" id="op">Hack Port(0): $50</button>
+    <button class="button" onclick="openLAN()" id="ln">Hack LAN(0): $200</button>
+    <button class="button" onclick="openRouter()" id="rt">Hack Router(0): $2500</button>
+    <h1></h1>
+
+
+    
+</body>
+<script src="main.js"> </script>
+</html>
